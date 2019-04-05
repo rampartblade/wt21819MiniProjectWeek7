@@ -1,0 +1,20 @@
+<mat-card class="card" *ngIf="country">
+  <mat-card-content>
+    <mat-card-title-group>
+      <mat-card-title>
+        <strong class="country-code">
+          {{country.CountryCode ? country.CountryCode : "N/A"}}
+        </strong>
+        nama negara
+      </mat-card-title>
+      <mat-card-subtitle>Capital city: {{country.CapitalName}}</mat-card-subtitle>
+    </mat-card-title-group>
+    <p>
+      Country code: {{country.CountryCode ? country.CountryCode : "N/A"}}
+    </p>
+    <p>Lat: {{country.CapitalLatitude}} / Lng: {{country.CapitalLongitude}}</p>
+    <p>Continent name: {{country.ContinentName}}</p>
+  </mat-card-content>
+</mat-card>
+
+
